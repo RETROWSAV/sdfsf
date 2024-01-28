@@ -2,8 +2,6 @@ const mineflayer = require('mineflayer');
 const Movements = require('mineflayer-pathfinder').Movements;
 const pathfinder = require('mineflayer-pathfinder').pathfinder;
 const { GoalBlock } = require('mineflayer-pathfinder').goals;
-const { exec } = require('child_process');
-
 
 const config = require('./settings.json');
 const express = require('express');
@@ -130,15 +128,3 @@ function createBot() {
 }
 
 createBot();
-
-exec('node .', (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Errore: ${error.message}`);
-    return;
-  }
-  if (stderr) {
-    console.error(`Errore standard: ${stderr}`);
-    return;
-  }
-  console.log(`Output standard: ${stdout}`);
-});
