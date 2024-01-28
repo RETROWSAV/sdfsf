@@ -6,8 +6,8 @@
   },
 
   "server": {
-    "ip": "manuxo73.aternos.me",
-    "port": 62910,
+    "ip": "retromc.aternos.me",
+    "port": 54096,
     "version": "1.12.1"
   },
   
